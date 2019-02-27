@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adwords Applicatie</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+  <!-- beginning of style -->
+    <style>
+
+
+body{
+
+}
+#inputWrapper{
+  margin:190px auto;
+  right:473.500;
+  width:620px;
+  height:100%;
+}
+
+#input1 {
+  width:100%;
+  height:75px;
+  border:solid black 1px;
+  margin-top:45px;
+  padding:0px;
+  word-wrap: break-word;
+}
+
+
+
+
+    h3 {
+      padding:0px;
+      margin:0px;
+      font-family: arial,sans-serif;
+      color:#1a0dab;
+      text-align: left;
+      cursor: pointer;
+      font-size:18px;
+    }
+
+    p {
+      color:rgb(0, 102, 33);
+      font-size: 14px;
+      font-style: normal;
+      height: auto;
+      width: auto;
+      text-align: left;
+      display: block;
+      font-weight: 400px;
+      line-height: 16px;
+      padding: 0px;
+      margin:0px;
+      font-family: arial,sans-serif;
+      cursor: pointer;
+      word-wrap: break-word;
+      cursor:grab;
+
+
+    }
+
+    .text {
+    color:rgb(84, 84, 84);
+    font-size: 13px;
+    font-family: arial,sans-serif;
+    text-align: left;
+    word-wrap: break-word;
+    font-weight: 400;
+    line-height: 18.2px;
+    display: inline;
+    margin:0px;
+    padding:0px;
+    padding-right:25px;
+    cursor:grab;
+    }
+
+
+
+/*           Input4                           */
+    #inputsection{
+    margin: 0px;
+    padding:0px;
+    width:400px;
+    position: absolute;
+    top:600px;
+    left:100px;
+    }
+
+      #labelcontainer {
+        clear:right;
+        float: left;
+        width:100px;
+        display: inline-block;
+
+      }
+
+      #inputcontainer{
+        width:250px;
+        clear: left;
+        display: inline-block;
+
+      }
+
+      .label{
+        display: block;
+        clear: right;
+        float: left;
+        margin-top: 10px;
+        padding:0px;
+        width:100%;
+      }
+
+
+
+        .inputfield{
+          display: block;
+          clear: right;
+          float: left;
+          margin-top: 10px;
+          padding:0px;
+        }
+
+
+/*     einde input 4                                 */
+
+
+
+
+
+
+/*              Input 2              */
+            #inputsection2{
+            margin: 0px;
+            padding:0px;
+            width:400px;
+            position: absolute;
+            top:350px;
+            left:100px;
+            }
+
+          #labelcontainer2 {
+            clear:right;
+            float: left;
+            width:100px;
+            display: inline-block;
+
+          }
+
+          #inputcontainer2{
+            width:250px;
+            clear: left;
+            display: inline-block;
+
+          }
+
+          .label2{
+            display: block;
+            clear: right;
+            float: left;
+            margin-top: 10px;
+            padding:0px;
+            width:100%;
+          }
+
+
+
+            .inputfield2{
+              display: block;
+              clear: right;
+              float: left;
+              margin-top: 10px;
+              padding:0px;
+            }
+
+
+
+
+
+            /*              Input 3              */
+                        #inputsection3{
+                        margin: 0px;
+                        padding:0px;
+                        width:400px;
+                        position: absolute;
+                        top:475px;
+                        left:100px;
+                        }
+
+                      #labelcontainer3 {
+                        clear:right;
+                        float: left;
+                        width:100px;
+                        display: inline-block;
+
+
+                      }
+
+                      #inputcontainer3{
+                        width:250px;
+                        clear: left;
+                        display: inline-block;
+
+                      }
+
+                      .label3{
+                        display: block;
+                        clear: right;
+                        float: left;
+                        margin-top: 10px;
+                        padding:0px;
+                        width:100%;
+                      }
+
+
+
+                        .inputfield3{
+                          display: block;
+                          clear: right;
+                          float: left;
+                          margin-top: 10px;
+                          padding:0px;
+                        }
+
+
+
+
+
+        .logo{
+          padding: 0px;
+          margin: 0px;
+          width:20%;
+          height: 20%;
+
+        }
+
+        .inputfield{
+          background-color: #3CBC8D;
+          color: white;
+        }
+
+        .inputfield2{
+          background-color: #3CBC8D;
+          color: white;
+        }
+
+        .inputfield3{
+          background-color: #3CBC8D;
+          color: white;
+        }
+
+        .google{
+          margin:0px;
+          padding:0px;
+          border:0px;
+          position: absolute;
+          top:40px;
+          left:290px;
+        }
+
+
+    </style>
+  <!-- end of style -->
+</head>
+
+<body>
+
+
+
+  <img class="logo" src="treelogo.png" />
+<div id="inputWrapper">
+
+  <img class="google" src="achtergrond.png" />
+
+
+<!-- max 160 characters in description -->
+    <div id="input1">
+        <h3>Tree Online - Internet marketing bureau</h3>
+        <p>https://www.treeonline.nl/ </p>
+        <span class="text">Meer bezoekers? Meer klanten? Meer omzet? Tree Online is een ervaren online marketing bureau met bewezen resultaten in diverse markten en branches.</span>
+    </div>
+
+    <div id="input1">
+        <h3 id="tekst2"></h3>
+        <p id="p2"></p>
+        <span id="span2" class="text"></span>
+    </div>
+
+    <!--Name: <input id="name" type="text">
+    <button onclick="go()">Go</button>
+    -->
+
+    <div id="input1">
+        <h3 id="tekst3"></h3>
+        <p id="p3"></p>
+        <span id="span3" class="text"></span>
+    </div>
+
+
+    <div id="input1">
+        <h3 id="tekst4"></h3>
+        <p id="p4"></p>
+        <span id="span4" class="text"></span>
+    </div>
+</div>
+<!-- input sectie voor slider 2 -->
+<div id="inputsection2">
+
+<div id="labelcontainer2">
+<label class="label2" for="title2">Titel</label>
+<label class="label2" for="slug2">Website url</label>
+<label class="label2" for="description2">Beschrijving</label>
+</div>
+
+<div id="inputcontainer2">
+<input class="inputfield2" id="title2" maxlength="60"/>
+<input class="inputfield2" id="slug2"/>
+<input class="inputfield2" id="description2" maxlength="160"/>
+</div>
+
+</div> <!-- input section2 close -->
+
+<div id="inputsection3">
+
+<div id="labelcontainer3">
+<label class="label3" for="title3">Titel</label>
+<label class="label3" for="slug3">Website url</label>
+<label class="label3" for="description3">Beschrijving</label>
+</div>
+
+<div id="inputcontainer">
+<input class="inputfield3" id="title3" maxlength="60" />
+<input class="inputfield3" id="slug3"/>
+<input class="inputfield3" id="description3" maxlength="160"/>
+</div>
+
+</div> <!-- input section 3 close -->
+
+<div id="inputsection">
+
+<div id="labelcontainer">
+<label class="label" for="title">Titel</label>
+<label class="label" for="slug">Website url</label>
+<label class="label" for="description">Beschrijving</label>
+</div>
+
+<div id="inputcontainer">
+<input class="inputfield" id="title" maxlength="60"/>
+<input class="inputfield" id="slug"/>
+<input class="inputfield" id="description" maxlength="160"/>
+</div>
+
+</div> <!-- input section close -->
+
+
+
+
+<!-- add javscript here -->
+<script>
+
+//code voor inpute nummer 2
+$("#title2").on('change input',function(){
+$('#tekst2').html($(this).val());
+})
+
+$("#slug2").on('change input',function(){
+$('#p2').html($(this).val());
+})
+
+$("#description2").on('change input',function(){
+$('#span2').html($(this).val());
+})
+
+
+// code voor input nummer 3
+$("#title3").on('change input',function(){
+$('#tekst3').html($(this).val());
+})
+
+$("#slug3").on('change input',function(){
+$('#p3').html($(this).val());
+})
+
+$("#description3").on('change input',function(){
+$('#span3').html($(this).val());
+})
+
+
+
+//code voor input nummer 4
+$("#title").on('change input',function(){
+$('#tekst4').html($(this).val());
+})
+
+$("#slug").on('change input',function(){
+$('#p4').html($(this).val());
+})
+
+$("#description").on('change input',function(){
+$('#span4').html($(this).val());
+})
+
+var titelopslaan = document.getElementById("tekst2");
+var opslaan = localStorage[titelopslaan];
+
+// Check browser support
+   if (typeof (Storage) !== "undefined") {
+       // Store
+       debugger
+       var value = document.getElementById("tekst2").innerText; // use innerText to get the text content
+       localStorage.setItem("tekst", value );  // here the storage key is tekst
+       // Retrieve
+       document.getElementById("tekst2").innerText = localStorage.getItem("tekst");  // here also the key should be same
+   } else {
+       document.getElementById("tekst2").innerText = "Sorry, your browser does not support Web Storage...";  // user innerText
+   }
+
+
+/*function go() {
+  var Adv1 = document.getElementById("tekst1");
+  var Adv1p1 = document.getElementById("p1");
+  var Advertentie1    = Adv1.textContent += var text = document.getElementById("name").value;
+  var p1              = Adv1p1.textContent
+}
+*/
+
+//var Adv1 = document.getElementById("tekst1");
+//var Adv1p1 = document.getElementById("p1");
+//var adv1s1 = document.getElementById("span1");
+
+
+//var Adv2 = document.getElementById("tekst2");
+//var Adv2p2 = document.getElementById("p2");
+
+
+//var Adv3 = document.getElementById("tekst3");
+//var Adv3p3 = document.getElementById("p3");
+
+
+//var Connect = new XMLHttpRequest();
+
+//var Advertentie1    = Adv1.textContent    +=  prompt("Wat is de Titel","Voer hier uw titel in");
+//var p1              = Adv1p1.textContent  +=  prompt("Url-pagina","Voer hier uw url in");
+//var smalltextspan   = adv1s1.textContent  +=  prompt("description","add your description here");
+
+//var Advertentie2    = Adv2.textContent    +=  prompt("Wat is de Titel","Voer hier uw titel in");
+//var p2              = Adv2p2.textContent  +=  prompt("Url-pagina","Voer hier uw url in");
+
+//var Advertentie3    = Adv3.textContent    +=  prompt("Wat is de Titel","Voer hier uw titel in");
+//var p3              = Adv3p3.textContent  +=  prompt("Url-pagina","Voer hier uw url in");
+
+</script>
+
+</body>
+</html>
